@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario</h1>
+        <form action="" id="form_clase">
+            <div class="form-row">
+                <div class="col-4">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control">
+                </div>
+                <div class="col-2">
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad" class="form-control">
+                </div>
+                <div class="col-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                    <div class="invalid-feedback">
+                        El email ya se encuentra ocupado.
+                    </div>
+                    <div class="valid-feedback">
+                        El email está disponible
+                    </div>
+                </div>
+                <div class="col-2 mt-4">
+                    <div class="spinner-border m-2 d-none" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <button class="btn btn-primary mt-2" id="btn_enviar">Enviar</button>
+            </div>
+        </form>
+        <hr>
+        <h4>Ajax Post</h4>
+        <div class="row">
+            <div class="form-group col-6">
+                <label for="grupo">Seleccione un grupo de superhéroes</label>
+                <select name="grupo" id="grupo" class="form-control">
+                    <option value="1">DC</option>
+                    <option value="2">X Men</option>
+                    <option value="3">Avengers</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class='col-6'>
+                <ul class="list-group" id="listado">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

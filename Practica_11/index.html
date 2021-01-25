@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Almacenamiento Local con HTML5</h1>
+        <div class="d-flex">
+            <span style="color: red; background-color: yellow;" id="mensajes"></span>
+        </div>
+        <div class="d-flex">
+            <div class="form-group">
+                <label for="">Area de Almacenamiento</label>
+                <select name="tipo" id="tipo" class="form-control">
+                    <option value="local">Local</option>
+                    <option value="sesion">Sesion</option>
+                </select>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="form-group">
+                <label for="clave">Clave:</label>
+                <input type="text" class="form-control" id="clave" name="clave">
+            </div>
+            <div class="form-group ml-2">
+                <label for="clave">Valor:</label>
+                <input type="text" class="form-control" id="valor" name="valor">
+            </div>
+        </div>
+        <div class="d-flex">
+            <button class="btn btn-success" id="guardar">Guardar</button>
+            <button class="btn btn-danger ml-2" id="eliminar">Eliminar</button>
+            <button class="btn btn-info ml-2" id="refrescar">Refrescar</button>
+            <button class="btn btn-primary ml-2" id="compatibilidad">Comprobar Compatibilidad Navegador</button>
+        </div>
+        <div class="d-flex mt-5">
+            <div class="form-group">
+                <label for="almacenamientoLocal">Claves y valores en el Local Storage</label>
+                <textarea name="" id="almacenamientoLocal" cols="30" rows="10" class="form-control" readonly></textarea>
+            </div>
+            <div class="form-group ml-5">
+                <label for="almacenamientoSesion">Claves y valores en el Session Storage</label>
+                <textarea name="" id="almacenamientoSesion" cols="30" rows="10" class="form-control" readonly></textarea>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
